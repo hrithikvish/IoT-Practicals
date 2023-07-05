@@ -13,6 +13,7 @@ io.setup(21, io.OUT)
 
 def decimalToBinary(num):
   binary = bin(num)[2:]
+  binary = binary.zfill(8)
   return binary
 
 If __name__ == ‘__main__’
